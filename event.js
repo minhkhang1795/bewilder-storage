@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
+  if (!eventId)
+    return;
+
   // Initialize the FirebaseUI Widget using Firebase.
   const db = firebase.firestore();
   const ui = new firebaseui.auth.AuthUI(firebase.auth());
